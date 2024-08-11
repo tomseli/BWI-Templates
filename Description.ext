@@ -1,0 +1,9 @@
+class CfgFunctions {
+    class BwiArsenal {
+        class functions {
+            file = "functions";
+            class addArsenal {};
+            class configureRadios {};
+        };
+    };
+};
