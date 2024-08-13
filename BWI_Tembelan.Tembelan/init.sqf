@@ -5,8 +5,10 @@ private _arsenal = spawn_arsenal;
 // Add radio presets 
 ["ACRE_PRC152", "default", 1, "label", "PLNET"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC152", "default", 2, "label", "AIRNET"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC152", "default", 3, "label", "CMDNET"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC117F", "default", 1, "label", "PLNET"] call acre_api_fnc_setPresetChannelField;
 ["ACRE_PRC117F", "default", 2, "label", "AIRNET"] call acre_api_fnc_setPresetChannelField;
+["ACRE_PRC117F", "default", 3, "label", "CMDNET"] call acre_api_fnc_setPresetChannelField;
 
 // add a callback to closing the arsenal display, to initialize radio channels 
 // execution is delayed by 1 second to allow ACRE to initialize the radios
