@@ -41,7 +41,9 @@ systemChat format ["%1", _radio_ids];
 
 	if (_x find "prc152" != -1) then {
 		switch (_group) do {
-			case "Platoon";
+			case "Platoon": {
+				_channel = 3;
+			};
 			case "Alpha";
 			case "Bravo";
 			case "Charlie";
