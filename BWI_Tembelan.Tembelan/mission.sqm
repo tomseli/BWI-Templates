@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=52;
+		nextID=53;
 	};
 	class Camera
 	{
-		pos[]={563.74225,15.508775,435.13245};
-		dir[]={0.83679658,-0.54348236,0.066684276};
-		up[]={0.54181182,0.83938694,0.04317756};
-		aside[]={0.079440087,3.8293956e-007,-0.99686396};
+		pos[]={557.93164,17.228954,438.43115};
+		dir[]={0.62684375,-0.64365709,-0.43917066};
+		up[]={0.52717221,0.76529562,-0.36934096};
+		aside[]={-0.57382548,-3.4783443e-007,-0.81904268};
 	};
 };
 binarizationWanted=0;
@@ -302,13 +302,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={564.76904,8.7614393,432.30319};
-						angles[]={0,5.6696796,-0};
+						position[]={564.76898,8.7614393,432.30298};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						rank="CAPTAIN";
 						description="Platoon@Platoon";
 						isPlayable=1;
 						class Inventory
@@ -326,6 +327,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -337,7 +351,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -350,7 +364,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -358,13 +372,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={566.91241,8.7614393,435.93405};
-						angles[]={0,4.3859057,-0};
+						position[]={566.91199,8.7614393,435.93399};
+						angles[]={0,4.3859076,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CAPTAIN";
 						description="Zeus@Platoon";
 						isPlayable=1;
 						class Inventory
@@ -382,6 +397,32 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -393,7 +434,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute3
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -406,7 +447,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=4;
 					};
 				};
 			};
@@ -444,13 +485,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={565.09326,8.7614393,423.50885};
-						angles[]={0,5.6696796,-0};
+						position[]={565.09302,8.7614393,423.509};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						description="Squad Leader@Alpha";
 						isPlayable=1;
 						class Inventory
@@ -468,6 +510,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -479,7 +534,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -492,7 +547,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -500,13 +555,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={566.15411,8.7614393,424.6701};
-						angles[]={0,5.6696796,-0};
+						position[]={566.15399,8.7614393,424.66998};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						description="CFR@Alpha";
 						isPlayable=1;
 						class Inventory
@@ -524,6 +580,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -535,7 +604,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -548,7 +617,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -556,13 +625,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={567.49817,8.7614393,425.72382};
-						angles[]={0,5.6696796,-0};
+						position[]={567.49799,8.7614393,425.724};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						description="Specialist@Alpha";
 						isPlayable=1;
 						class Inventory
@@ -612,13 +682,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={568.93634,8.7614393,426.65253};
-						angles[]={0,5.6696796,-0};
+						position[]={568.93597,8.7614393,426.65298};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						description="Specialist@Alpha";
 						isPlayable=1;
 						class Inventory
@@ -669,7 +740,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={566.63745,8.7614393,421.73785};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -725,7 +796,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={567.95477,8.7614393,422.71646};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -781,7 +852,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={569.19775,8.7614393,423.8739};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -837,7 +908,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={570.71484,8.7614393,424.84204};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -922,13 +993,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={570.75946,8.7614393,428.78912};
-						angles[]={0,5.6696796,-0};
+						position[]={570.75897,8.7614393,428.789};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						description="Squad Leader@Bravo";
 						isPlayable=1;
 						class Inventory
@@ -946,6 +1018,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -957,7 +1042,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -970,7 +1055,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -978,13 +1063,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={571.82013,8.7614393,429.95065};
-						angles[]={0,5.6696796,-0};
+						position[]={571.82001,8.7614393,429.95099};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						description="CFR@Bravo";
 						isPlayable=1;
 						class Inventory
@@ -1002,6 +1088,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -1013,7 +1112,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1026,7 +1125,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -1034,13 +1133,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={573.16418,8.7614393,431.00479};
-						angles[]={0,5.6696796,-0};
+						position[]={573.164,8.7614393,431.00497};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						description="Specialist@Bravo";
 						isPlayable=1;
 						class Inventory
@@ -1090,13 +1190,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={574.60187,8.7614393,431.93262};
-						angles[]={0,5.6696796,-0};
+						position[]={574.60199,8.7614393,431.93298};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						description="Specialist@Bravo";
 						isPlayable=1;
 						class Inventory
@@ -1147,7 +1248,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={572.30322,8.7614393,427.01877};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -1203,7 +1304,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={573.62018,8.7614393,427.99673};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -1259,7 +1360,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={574.86395,8.7614393,429.15421};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -1315,7 +1416,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={576.38025,8.7614393,430.12259};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -1400,13 +1501,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={576.44647,8.7614393,434.06943};
-						angles[]={0,5.6696796,-0};
+						position[]={576.44598,8.7614393,434.069};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						description="Squad Leader@Charlie";
 						isPlayable=1;
 						class Inventory
@@ -1424,6 +1526,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -1435,7 +1550,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1448,7 +1563,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -1456,13 +1571,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={577.50714,8.7614393,435.23096};
-						angles[]={0,5.6696796,-0};
+						position[]={577.50702,8.7614393,435.23099};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						description="CFR@Charlie";
 						isPlayable=1;
 						class Inventory
@@ -1480,6 +1596,19 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -1491,7 +1620,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1504,7 +1633,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -1512,13 +1641,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={578.8512,8.7614393,436.2851};
-						angles[]={0,5.6696796,-0};
+						position[]={578.85101,8.7614393,436.28497};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						description="Specialist@Charlie";
 						isPlayable=1;
 						class Inventory
@@ -1568,13 +1698,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={580.28894,8.7614393,437.21295};
-						angles[]={0,5.6696796,-0};
+						position[]={580.289,8.7614393,437.21298};
+						angles[]={0,5.6696844,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
+						rank="CORPORAL";
 						description="Specialist@Charlie";
 						isPlayable=1;
 						class Inventory
@@ -1625,7 +1756,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={577.99023,8.7614393,432.29907};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -1681,7 +1812,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={579.30725,8.7614393,433.27704};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -1737,7 +1868,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={580.55096,8.7614393,434.43451};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -1793,7 +1924,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={582.06732,8.7614393,435.40289};
-						angles[]={0,5.6696796,-0};
+						angles[]={0,5.6696796,0};
 					};
 					side="West";
 					flags=5;
@@ -1861,13 +1992,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={577.08868,8.7614393,441.58554};
-						angles[]={0,4.3052912,-0};
+						position[]={577.08899,8.7614393,441.586};
+						angles[]={0,4.3052912,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						description="Leader@Zulu";
 						isPlayable=1;
 						class Inventory
@@ -1917,14 +2049,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={576.55975,8.7614393,443.4126};
-						angles[]={0,4.3052912,-0};
+						position[]={576.56,8.7614393,443.41299};
+						angles[]={0,4.3052912,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						skill=0.49828124;
+						rank="CORPORAL";
 						description="Secondary@Zulu";
 						isPlayable=1;
 						class Inventory
@@ -2004,13 +2137,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={575.96765,8.7614393,445.40384};
-						angles[]={0,4.3052912,-0};
+						position[]={575.96802,8.7614393,445.40399};
+						angles[]={0,4.3052912,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						description="Leader@Yankee";
 						isPlayable=1;
 						class Inventory
@@ -2060,14 +2194,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={575.43872,8.7614393,447.2309};
-						angles[]={0,4.3052912,-0};
+						position[]={575.43903,8.7614393,447.23099};
+						angles[]={0,4.3052912,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						skill=0.49828124;
+						rank="CORPORAL";
 						description="Secondary@Yankee";
 						isPlayable=1;
 						class Inventory
@@ -2147,13 +2282,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={574.72369,8.7614393,448.94168};
-						angles[]={0,4.3052912,-0};
+						position[]={574.724,8.7614393,448.94199};
+						angles[]={0,4.3052912,0};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
+						rank="SERGEANT";
 						description="Leader@X-ray";
 						isPlayable=1;
 						class Inventory
@@ -2203,14 +2339,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={574.19476,8.7614393,450.76874};
-						angles[]={0,4.3052912,-0};
+						position[]={574.19501,8.7614393,450.76898};
+						angles[]={0,4.3052912,0};
 					};
 					side="West";
 					flags=5;
 					class Attributes
 					{
 						skill=0.49828124;
+						rank="CORPORAL";
 						description="Secondary@X-ray";
 						isPlayable=1;
 						class Inventory
