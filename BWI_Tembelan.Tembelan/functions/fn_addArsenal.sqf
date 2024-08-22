@@ -26,7 +26,7 @@ private _loadouts = [
 } forEach _loadouts;
 
 // add attachments and other peripheral items
-private _peripherals = ["attachments"];
+private _peripherals = ["attachments", "miscellaneous"];
 
 {
 	private _path = format ["data\%1.sqf", _x];
