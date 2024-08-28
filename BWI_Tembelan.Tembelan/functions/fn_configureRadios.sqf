@@ -1,13 +1,7 @@
 private _radio_ids = [] call acre_api_fnc_getCurrentRadioList;
 private _group = roleDescription player splitString "@" select 1;
 
-// DEBUG	
-systemChat format ["%1", _radio_ids];
-
 {
-	// DEBUG
-	systemChat format ["Checking radio: %1 with group %2", _x, _group];
-	
 	private _channel = 1;
 
 	if (_x find "prc343" != -1) then {
@@ -34,7 +28,7 @@ systemChat format ["%1", _radio_ids];
 				_channel = 7;
 			};
 			default { 
-				systemChat "Group not recognized, contact Zeus";
+				systemChat "Group not recognized, contact Zeus. Set channel manually.";
 			};
 		};
 	};
@@ -53,7 +47,7 @@ systemChat format ["%1", _radio_ids];
 				_channel = 1;
 			};
 			default {
-				systemChat "Group not recognized, contact Zeus";
+				systemChat "Group not recognized, contact Zeus. Set channel manually.";
 			};
 		};
 	};
@@ -70,13 +64,10 @@ systemChat format ["%1", _radio_ids];
 				_channel = 1;
 			};
 			default {
-				systemChat "Group not recognized, contact Zeus";
+				systemChat "Group not recognized, contact Zeus. Set channel manually.";
 			};
 		};
 	};
-
-	// DEBUG 
-	systemChat format ["Selected channel %1 for radio %2", _channel, _x];
 
 	[_x, _channel] call acre_api_fnc_setRadioChannel;
 } forEach _radio_ids;
