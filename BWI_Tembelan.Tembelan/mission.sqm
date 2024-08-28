@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=59;
+		nextID=61;
 	};
 	class Camera
 	{
@@ -135,6 +135,7 @@ class ScenarioData
 {
 	author="Selier";
 	forceRotorLibSimulation=1;
+	disabledAI=1;
 	respawn=3;
 	respawnDelay=150;
 };
@@ -172,6 +173,24 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
 				};
 			};
 		};
