@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=57;
+		nextID=59;
 	};
 	class Camera
 	{
@@ -136,7 +136,7 @@ class ScenarioData
 	author="Selier";
 	forceRotorLibSimulation=1;
 	respawn=3;
-	respawnDelay=60.000004;
+	respawnDelay=150;
 };
 class CustomAttributes
 {
@@ -2494,7 +2494,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={593.1333,9.044055,394.44766};
-						angles[]={-0,0.028223179,0};
+						angles[]={0,0.028223179,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2527,7 +2527,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={593.23334,9.044055,392.71228};
-						angles[]={-0,3.1648417,0};
+						angles[]={0,3.1648417,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2560,7 +2560,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={593.22833,8.7600002,390.66312};
-						angles[]={-0,4.7467895,0};
+						angles[]={0,4.7467895,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2576,7 +2576,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={593.30066,8.9487247,396.18204};
-						angles[]={-0,4.7177486,0};
+						angles[]={0,4.7177486,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2609,7 +2609,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={594.71417,9.044055,394.46054};
-						angles[]={-0,3.1964498,0};
+						angles[]={0,3.1964498,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2675,7 +2675,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={594.83466,9.044055,398.7247};
-						angles[]={-0,3.1648417,0};
+						angles[]={0,3.1648417,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2708,7 +2708,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={594.55792,9.044055,392.59363};
-						angles[]={-0,3.1648417,0};
+						angles[]={0,3.1648417,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2741,7 +2741,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={594.80969,9.044055,396.07196};
-						angles[]={-0,0.054350965,0};
+						angles[]={0,0.054350965,0};
 					};
 					side="Empty";
 					flags=4;
