@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=54;
+		nextID=55;
 	};
 	class Camera
 	{
@@ -1980,6 +1980,23 @@ class Mission
 			{
 			};
 			id=1044;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Charlie";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item6
 		{
