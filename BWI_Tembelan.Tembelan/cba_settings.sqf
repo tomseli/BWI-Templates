@@ -629,7 +629,7 @@ force ace_zeus_zeusAscension = false;
 force ace_zeus_zeusBird = false;
 
 // ACRE2
-acre_sys_core_automaticAntennaDirection = false;
+acre_sys_core_automaticAntennaDirection = true;
 // acre_sys_core_defaultRadioVolume = 0.8;
 force acre_sys_core_fullDuplex = false;
 // acre_sys_core_godVolume = 1;
@@ -639,7 +639,7 @@ force acre_sys_core_interference = true;
 // acre_sys_core_premixGlobalVolume = 1;
 force acre_sys_core_revealToAI = 1;
 // acre_sys_core_spectatorVolume = 1;
-force acre_sys_core_terrainLoss = 1;
+force acre_sys_core_terrainLoss = 0.5;
 force force acre_sys_core_ts3ChannelName = "ACRE";
 force acre_sys_core_ts3ChannelPassword = "";
 acre_sys_core_ts3ChannelSwitch = true;
