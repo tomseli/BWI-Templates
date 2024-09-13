@@ -15,7 +15,8 @@ private _loadouts = [
 	"Medium machine gun leader",
 	"Platoon leader",
 	"Rifleman",
-	"Squad Leader"
+	"Squad Leader",
+	"Logistics"
 ];
 
 {	
