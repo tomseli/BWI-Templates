@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1076;
+		nextID=1078;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=61;
+		nextID=67;
 	};
 	class Camera
 	{
-		pos[]={552.87091,19.524673,429.0871};
-		dir[]={0.79016739,-0.55750394,0.2546559};
-		up[]={0.53063881,0.83016497,0.17101544};
-		aside[]={0.30674818,1.3062163e-008,-0.95180267};
+		pos[]={552.37708,19.524673,433.8949};
+		dir[]={0.69910657,-0.68851167,-0.19287737};
+		up[]={0.66371518,0.72522527,-0.1831132};
+		aside[]={-0.26595512,0,-0.96398538};
 	};
 };
 binarizationWanted=0;
@@ -224,7 +224,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			dataType="Layer";
@@ -542,6 +542,110 @@ class Mission
 			};
 		};
 		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={561.01801,8.7614393,432.27499};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="LIEUTENANT";
+						description="Logistics@Logistics";
+						isPlayable=1;
+					};
+					id=1077;
+					type="B_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Logistics";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item4
 		{
 			dataType="Group";
 			side="West";
@@ -1049,7 +1153,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item4
+		class Item5
 		{
 			dataType="Group";
 			side="West";
@@ -1557,7 +1661,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item5
+		class Item6
 		{
 			dataType="Group";
 			side="West";
@@ -2065,7 +2169,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item6
+		class Item7
 		{
 			dataType="Group";
 			side="West";
@@ -2210,7 +2314,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item7
+		class Item8
 		{
 			dataType="Group";
 			side="West";
@@ -2355,7 +2459,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item8
+		class Item9
 		{
 			dataType="Group";
 			side="West";
@@ -2500,7 +2604,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item9
+		class Item10
 		{
 			dataType="Layer";
 			name="Ammo Resupply US";
