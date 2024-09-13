@@ -13,8 +13,12 @@ private _arsenal = spawn_arsenal;
 // add a callback to closing the arsenal display, to initialize radio channels 
 // execution is delayed by 1 second to allow ACRE to initialize the radios
 ["ace_arsenal_displayClosed", {
+	// configure the radios
 	0 spawn {
 		sleep 1;
 		call BwiArsenal_fnc_configureRadios;
 	};
+
+	// save loadouts for use in "onPlayerRespawn.sqf"
+	player setVariable["loadout", getUnitLoadout player];
 }] call CBA_fnc_addEventHandler;
