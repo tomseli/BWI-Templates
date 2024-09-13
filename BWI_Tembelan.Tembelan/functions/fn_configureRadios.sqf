@@ -6,7 +6,8 @@ private _group = roleDescription player splitString "@" select 1;
 
 	if (_x find "prc343" != -1) then {
 		switch (_group) do {
-			case "Platoon": { 
+			case "Platoon";
+			case "Logistics": {
 				_channel = 1;
 			};
 			case "Alpha": {
@@ -35,7 +36,8 @@ private _group = roleDescription player splitString "@" select 1;
 
 	if (_x find "prc152" != -1) then {
 		switch (_group) do {
-			case "Platoon": {
+			case "Platoon";
+			case "Logistics" : {
 				_channel = 3;
 			};
 			case "Alpha";
@@ -55,6 +57,7 @@ private _group = roleDescription player splitString "@" select 1;
 	if (_x find "prc117f" != -1) then {
 		switch (_group) do {
 			case "Platoon";
+			case "Logistics";
 			case "Alpha";
 			case "Bravo";
 			case "Charlie";
