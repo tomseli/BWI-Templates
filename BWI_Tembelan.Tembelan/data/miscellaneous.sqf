@@ -18,5 +18,10 @@
 	// Kits
 	"ACE_DefusalKit",
 	"ToolKit",
-	"ACE_EntrenchingTool"
+	"ACE_EntrenchingTool",
+
+	// Other 
+	"ACE_M14",
+	"ACE_wirecutter",
+	"ACE_M84"
 ]
