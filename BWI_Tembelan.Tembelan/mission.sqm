@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=67;
+		nextID=69;
 	};
 	class Camera
 	{
@@ -155,8 +155,16 @@ class CustomAttributes
 					singleType="ARRAY";
 					class value
 					{
-						items=2;
+						items=3;
 						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="ace_spectator";
+							};
+						};
+						class Item1
 						{
 							class data
 							{
@@ -164,7 +172,7 @@ class CustomAttributes
 								value="Wave";
 							};
 						};
-						class Item1
+						class Item2
 						{
 							class data
 							{
