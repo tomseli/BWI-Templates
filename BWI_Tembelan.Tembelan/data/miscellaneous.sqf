@@ -3,7 +3,7 @@
 	"DemoCharge_Remote_Mag",
 	"SatchelCharge_Remote_Mag",
 	"ACE_Clacker",
-	"ACE_VHM3",
+	"ACE_VMH3",
 
 	// Spray paint 
 	"ACE_SpraypaintRed",
