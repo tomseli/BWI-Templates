@@ -1,0 +1,11 @@
+cba_settings_hasSettingsFile = 1;
+
+class CfgFunctions {
+    class BwiArsenal {
+        class functions {
+            file = "functions";
+            class addArsenal {};
+            class configureRadios {};
+        };
+    };
+};
