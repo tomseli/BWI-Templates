@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={60.282814,48.125458,7843.2354};
-		dir[]={0.64860171,-0.74262953,-0.16692382};
-		up[]={0.7192046,0.66969311,-0.18509427};
-		aside[]={-0.24924266,-2.7616443e-07,-0.96846247};
+		pos[]={60.587154,48.125458,7834.2969};
+		dir[]={0.68626606,-0.65915924,0.30748674};
+		up[]={0.601538,0.75200331,0.26952368};
+		aside[]={0.40889007,0,-0.91258371};
 	};
 };
 binarizationWanted=0;
@@ -165,8 +165,8 @@ class Mission
 		year=2003;
 		month=6;
 		day=1;
-		hour=5;
-		minute=33;
+		hour=13;
+		minute=-20;
 		startFogDecay=0.014;
 		forecastFogDecay=0.014;
 	};
@@ -367,6 +367,7 @@ class Mission
 				};
 			};
 			id=51;
+			atlOffset=-168.64;
 		};
 		class Item2
 		{
@@ -464,6 +465,7 @@ class Mission
 				};
 			};
 			id=54;
+			atlOffset=-168.64;
 		};
 		class Item3
 		{
@@ -965,6 +967,7 @@ class Mission
 				};
 			};
 			id=64;
+			atlOffset=-168.64;
 		};
 		class Item4
 		{
@@ -1466,6 +1469,7 @@ class Mission
 				};
 			};
 			id=74;
+			atlOffset=-168.64;
 		};
 		class Item5
 		{
@@ -1967,6 +1971,7 @@ class Mission
 				};
 			};
 			id=84;
+			atlOffset=-168.64;
 		};
 		class Item6
 		{
@@ -2105,6 +2110,7 @@ class Mission
 				};
 			};
 			id=88;
+			atlOffset=-168.64;
 		};
 		class Item7
 		{
@@ -2243,6 +2249,7 @@ class Mission
 				};
 			};
 			id=92;
+			atlOffset=-168.64;
 		};
 		class Item8
 		{
@@ -2381,6 +2388,7 @@ class Mission
 				};
 			};
 			id=96;
+			atlOffset=-168.64;
 		};
 		class Item9
 		{
@@ -2480,6 +2488,7 @@ class Mission
 							};
 							id=98;
 							type="Box_FIA_Support_F";
+							atlOffset=-0.022762299;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -2513,10 +2522,11 @@ class Mission
 						};
 					};
 					id=97;
+					atlOffset=-0.022762299;
 				};
 			};
 			id=100;
-			atlOffset=6.561882;
+			atlOffset=6.5693054;
 		};
 	};
 };
