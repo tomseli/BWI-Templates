@@ -5,6 +5,7 @@
 	"rhsusf_acc_ACOG", 
 	"rhsusf_acc_ELCAN", // M145 MGO
 	"rhsusf_acc_T1_high", // red dot
+	"optic_MRCO", // Pitbull
 
 	// Muzzle attachments
 	"rhsusf_acc_SF3P556", // Flash hider 
