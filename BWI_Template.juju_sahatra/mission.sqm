@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=101;
+		nextID=104;
 	};
 	class LayerIndexProvider
 	{
-		nextID=44;
+		nextID=58;
 	};
 	class Camera
 	{
-		pos[]={60.587154,48.125458,7834.2969};
-		dir[]={0.68626606,-0.65915924,0.30748674};
-		up[]={0.601538,0.75200331,0.26952368};
-		aside[]={0.40889007,0,-0.91258371};
+		pos[]={50.989799,53.250687,7834.4902};
+		dir[]={0.75716096,-0.64712948,0.089088365};
+		up[]={0.64269769,0.76237887,0.075620458};
+		aside[]={0.11685541,-2.4505425e-08,-0.99315238};
 	};
 };
 binarizationWanted=0;
@@ -33,13 +33,14 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Weapons_F_Bootcamp_Ammoboxes",
-	"ace_overheating"
+	"ace_overheating",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -67,6 +68,13 @@ class AddonsMetaData
 			name="ACE3 - Overheating";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
+		};
+		class Item4
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -172,7 +180,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			dataType="Layer";
@@ -364,10 +372,26 @@ class Mission
 					{
 					};
 					id=48;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Platoon";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=51;
-			atlOffset=-168.64;
 		};
 		class Item2
 		{
@@ -388,7 +412,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={67.691917,33.310265,7838.3101};
+								position[]={67.692001,33.310219,7838.3096};
 							};
 							side="West";
 							flags=7;
@@ -462,10 +486,26 @@ class Mission
 					{
 					};
 					id=52;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Logistics";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=54;
-			atlOffset=-168.64;
 		};
 		class Item3
 		{
@@ -964,10 +1004,26 @@ class Mission
 					{
 					};
 					id=55;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Alpha";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=64;
-			atlOffset=-168.64;
 		};
 		class Item4
 		{
@@ -1466,10 +1522,26 @@ class Mission
 					{
 					};
 					id=65;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Bravo";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=74;
-			atlOffset=-168.64;
 		};
 		class Item5
 		{
@@ -1968,10 +2040,26 @@ class Mission
 					{
 					};
 					id=75;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Charlie";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=84;
-			atlOffset=-168.64;
 		};
 		class Item6
 		{
@@ -2107,10 +2195,26 @@ class Mission
 					{
 					};
 					id=85;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Zulu";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=88;
-			atlOffset=-168.64;
 		};
 		class Item7
 		{
@@ -2246,10 +2350,26 @@ class Mission
 					{
 					};
 					id=89;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Yankee";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=92;
-			atlOffset=-168.64;
 		};
 		class Item8
 		{
@@ -2385,10 +2505,26 @@ class Mission
 					{
 					};
 					id=93;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="X-ray";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=96;
-			atlOffset=-168.64;
 		};
 		class Item9
 		{
@@ -2527,6 +2663,34 @@ class Mission
 			};
 			id=100;
 			atlOffset=6.5693054;
+		};
+		class Item10
+		{
+			dataType="Layer";
+			name="10. Respawn";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="Template_1";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Marker";
+							position[]={75.520187,33.455433,7846.1943};
+							name="respawn";
+							type="Empty";
+							id=102;
+						};
+					};
+					id=101;
+				};
+			};
+			id=103;
 		};
 	};
 };
