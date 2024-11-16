@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={49.826683,53.250687,7840.7861};
-		dir[]={0.75246495,-0.65715003,0.044258285};
-		up[]={0.65601873,0.75375754,0.0385856};
-		aside[]={0.058716483,-7.8216544e-10,-0.9982779};
+		pos[]={50.989799,53.250687,7834.4902};
+		dir[]={0.75716096,-0.64712948,0.089088365};
+		up[]={0.64269769,0.76237887,0.075620458};
+		aside[]={0.11685541,-2.4505425e-08,-0.99315238};
 	};
 };
 binarizationWanted=0;
@@ -372,6 +372,23 @@ class Mission
 					{
 					};
 					id=48;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Platoon";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=51;
@@ -395,7 +412,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={67.691917,33.310265,7838.3101};
+								position[]={67.692001,33.310219,7838.3096};
 							};
 							side="West";
 							flags=7;
@@ -469,6 +486,23 @@ class Mission
 					{
 					};
 					id=52;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Logistics";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=54;
@@ -970,6 +1004,23 @@ class Mission
 					{
 					};
 					id=55;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Alpha";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=64;
@@ -1471,6 +1522,23 @@ class Mission
 					{
 					};
 					id=65;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Bravo";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=74;
@@ -1972,6 +2040,23 @@ class Mission
 					{
 					};
 					id=75;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Charlie";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=84;
@@ -2110,6 +2195,23 @@ class Mission
 					{
 					};
 					id=85;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Zulu";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=88;
@@ -2248,6 +2350,23 @@ class Mission
 					{
 					};
 					id=89;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Yankee";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=92;
@@ -2386,6 +2505,23 @@ class Mission
 					{
 					};
 					id=93;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="X-ray";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=96;
