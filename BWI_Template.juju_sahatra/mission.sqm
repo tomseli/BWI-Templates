@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=101;
+		nextID=104;
 	};
 	class LayerIndexProvider
 	{
-		nextID=44;
+		nextID=58;
 	};
 	class Camera
 	{
-		pos[]={60.587154,48.125458,7834.2969};
-		dir[]={0.68626606,-0.65915924,0.30748674};
-		up[]={0.601538,0.75200331,0.26952368};
-		aside[]={0.40889007,0,-0.91258371};
+		pos[]={49.826683,53.250687,7840.7861};
+		dir[]={0.75246495,-0.65715003,0.044258285};
+		up[]={0.65601873,0.75375754,0.0385856};
+		aside[]={0.058716483,-7.8216544e-10,-0.9982779};
 	};
 };
 binarizationWanted=0;
@@ -33,13 +33,14 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Weapons_F_Bootcamp_Ammoboxes",
-	"ace_overheating"
+	"ace_overheating",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -67,6 +68,13 @@ class AddonsMetaData
 			name="ACE3 - Overheating";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
+		};
+		class Item4
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -172,7 +180,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			dataType="Layer";
@@ -367,7 +375,6 @@ class Mission
 				};
 			};
 			id=51;
-			atlOffset=-168.64;
 		};
 		class Item2
 		{
@@ -465,7 +472,6 @@ class Mission
 				};
 			};
 			id=54;
-			atlOffset=-168.64;
 		};
 		class Item3
 		{
@@ -967,7 +973,6 @@ class Mission
 				};
 			};
 			id=64;
-			atlOffset=-168.64;
 		};
 		class Item4
 		{
@@ -1469,7 +1474,6 @@ class Mission
 				};
 			};
 			id=74;
-			atlOffset=-168.64;
 		};
 		class Item5
 		{
@@ -1971,7 +1975,6 @@ class Mission
 				};
 			};
 			id=84;
-			atlOffset=-168.64;
 		};
 		class Item6
 		{
@@ -2110,7 +2113,6 @@ class Mission
 				};
 			};
 			id=88;
-			atlOffset=-168.64;
 		};
 		class Item7
 		{
@@ -2249,7 +2251,6 @@ class Mission
 				};
 			};
 			id=92;
-			atlOffset=-168.64;
 		};
 		class Item8
 		{
@@ -2388,7 +2389,6 @@ class Mission
 				};
 			};
 			id=96;
-			atlOffset=-168.64;
 		};
 		class Item9
 		{
@@ -2527,6 +2527,34 @@ class Mission
 			};
 			id=100;
 			atlOffset=6.5693054;
+		};
+		class Item10
+		{
+			dataType="Layer";
+			name="10. Respawn";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="Template_1";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Marker";
+							position[]={75.520187,33.455433,7846.1943};
+							name="respawn";
+							type="Empty";
+							id=102;
+						};
+					};
+					id=101;
+				};
+			};
+			id=103;
 		};
 	};
 };
